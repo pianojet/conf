@@ -1,0 +1,40 @@
+[ui]
+username = xxxxx 
+
+# Use only two panes for vimdiff instead of the default 3-way interface.
+[merge-tools]
+vimdiff.args = $local $other
+ 
+
+# Use a personal hgignore file
+ignore = ~/.hgrc.ignore
+ 
+[extensions]
+# add color output to status, qseries, and diff-related commands
+hgext.color =
+hgshelve = /home/xxxxxxxx/hgext/hgshelve.py
+
+# show revision graphs in terminal windows (adds the 'glog' command)
+hgext.graphlog =
+ 
+# Display a progress bar for some actions
+hgext.progress =
+ 
+# Display output using a pager
+hgext.pager =
+
+#MQ!
+hgext.mq = 
+ 
+# Set various pager options, if that extension is enabled.
+[pager]
+pager = less -FRXi
+ignore = help, version, update, serve, record
+
+[mq]
+sectret = True
+
+[diff]
+git = True
+
+[auth]
